@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入頁面</title>
+    <link rel="stylesheet" href="/art.css">
+    <link rel="shortcut icon" href="/img//logo.ico" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-form {
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            border: 6px solid black;
+            background-color: floralwhite;
+            box-sizing: border-box;
+        }
+        .form-header {
+            margin-top: 0;
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .form-label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-input {
+            padding: 5px;
+            font-size: 16px;
+            border: 2px solid black;
+        }
+        .form-submit {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .form-submit input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        .form-submit button {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        .form-submit-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .img{
+            width: 7%;
+            height: 7%;
+            border: 2px solid black;
+            display: flex;      
+            display:inline;
+        width: 10%;
+        }
+        #a{
+        display:inline;
+        width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <h1 class="form-header">登入</h1>
+        <hr>
+        <form action="http://127.0.0.1:5500/index.html" method="post">
+            <div class="form-group">
+                <label for="username" class="form-label">帳號：</label>
+                <input type="text" id="username" name="username" class="form-input" placeholder="請輸入帳號" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">密碼：</label>
+                <input type="password" id="password" name="password" class="form-input" placeholder="請輸入密碼" required>
+            </div>
+            <div class="form-submit">
+                <input type="submit" value="登入">
+                <button onclick="location.href='http://127.0.0.1:5500/index.html'">回到首頁</button>
+            </div>
+            <div class="form-submit">
+                <button onclick="location.href='http://127.0.0.1:5500/register.html'">註冊</button>
+                <button onclick="location.href='http://127.0.0.1:5500/forgot-password.html'">忘記密碼</button>
+            </div>
+            <div class="form-submit">
+                <a id="a" href="http://127.0.0.1:5500/index.html"><img class="img" src="/img/back.png" alt=""></a>
+            </div>
+        </form>         
+    </div>
+</body>
+</html>

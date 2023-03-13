@@ -1,0 +1,109 @@
+.header {
+  background-color: #fff; /* 背景色為白色 */
+  position: fixed; /* 定位方式為固定定位 */
+  top: 0; /* 上方定位為0 */
+  left: 0; /* 左方定位為0 */
+  width: 100%; /* 寬度為100% */
+  z-index: 999; /* 疊放順序為999 */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+}
+
+.nav ul {
+  margin: 0; /* 邊距為0 */
+  padding: 0; /* 內距為0 */
+  list-style: none; /* 移除列表樣式 */
+  display: flex; /* 設定彈性盒子 */
+  justify-content: space-between; /* 將彈性盒子內的元素左右排列 */
+  align-items: center; /* 將彈性盒子內的元素垂直居中 */
+  height: 25px; /* 高度為60px */
+}
+
+.nav ul li.logo {
+  margin-right: auto; /* 將logo元素靠左對齊 */
+}
+
+.nav ul li {
+  margin:10px; /* 項目之間的間距 */
+}
+
+.nav ul li a {
+  display: block; /* 將a標籤設定為塊級元素 */
+  color: #333; /* 字體顏色為深灰色 */
+  font-size: 18px; /* 字體大小為18px */
+  text-decoration: none; /* 移除底線 */
+  padding: 0 10px; /* 內距為0 10px */
+  line-height: 60px; /* 行高為60px */
+}
+
+.nav ul li a:hover {
+  background-color: #f2f2f2; /* 滑鼠滑過時的背景色 */
+}
+.decoration{
+  text-decoration: none;
+}
+
+#menu {
+  display: flex; /* 設定彈性盒子 */
+  justify-content: flex-start; /* 將彈性盒子內的元素左對齊 */
+  align-items: center; /* 垂直居中對齊 */
+  background-color: #f2f2f2; /* 設置背景色 */
+  padding: 5px; /* 元素內邊距 */
+  }
+  .menu{
+    margin-right: 10px; /* 右邊距 */
+  }
+  .menu{
+    margin-right: 20px; /* 右邊距 */
+    text-decoration: none; /* 去除超連結的下劃線 */
+    color: black; /* 文字顏色 */
+    font-size: 25px; /* 文字大小 */
+    font-weight: bold; /* 文字粗細 */
+  }
+
+/* 設置下拉式選單容器的樣式 */
+.dropdown {
+  position: relative; /* 設置定位為相對定位，方便下拉選單的絕對定位 */
+  display: inline-block; /* 將容器設為行內元素，可以讓連結和下拉選單在同一行顯示 */
+}
+
+/* 設置下拉選單的樣式 */
+.dropdown-content {
+  display: none; /* 隱藏下拉選單 */
+  position: absolute; /* 設置定位為絕對定位，以相對於父元素的位置定位 */
+  z-index: 1; /* 設置z-index為1，確保下拉選單顯示在其他元素的前面 */
+}
+
+/* 當滑鼠懸停在容器上時顯示下拉選單 */
+.dropdown:hover .dropdown-content {
+  display: block; /* 顯示下拉選單 */
+}
+
+/* 設置下拉選單中選項的樣式 */
+.dropdown-content a {
+  color: black; /* 設置字體顏色為黑色 */
+  padding: 20px 25px; /* 設置內邊距 */
+  text-decoration: none; /* 去掉文字的下劃線 */
+  display: block; /* 將連結設為塊級元素，方便設置樣式 */
+}
+
+/* 當滑鼠懸停在選項上時顯示背景顏色 */
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* 設置背景顏色為淺灰色 */
+}
+
+.img{
+  width: 100px;
+  height: 100px;
+}
+
+.font{
+  font-size: 10px;
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+
+
+
+  
